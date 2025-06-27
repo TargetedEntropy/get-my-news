@@ -31,7 +31,7 @@ def setup_logger(
         logging.config.dictConfig(logging_config.get_config())
 
         # Setup custom handlers that can't be configured via dictConfig
-        logging_config.setup_custom_handlers()
+        logging_config._create_logger_config()
 
         # Get the root logger
         logger = logging.getLogger()
