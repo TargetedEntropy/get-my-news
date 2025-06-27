@@ -289,28 +289,28 @@ class Settings:
         print(f"Project Root: {self.project_root}")
         print(f"Config File: {self.env_file}")
 
-        print(f"\nDatabase:")
+        print("\nDatabase:")
         print(f"  URL: {self._mask_credentials(self.database.url)}")
         print(f"  Pool Size: {self.database.pool_size}")
         print(f"  Max Overflow: {self.database.max_overflow}")
 
-        print(f"\nAPI:")
+        print("\nAPI:")
         print(f"  Base URL: {self.api.base_url}")
         print(f"  Timeout: {self.api.timeout}s")
         print(f"  Retry Attempts: {self.api.retry_attempts}")
 
-        print(f"\nRate Limiting:")
+        print("\nRate Limiting:")
         print(f"  Max Daily Requests: {self.rate_limit.max_daily_requests}")
         print(f"  Tracking File: {self.rate_limit.tracking_file}")
         print(f"  Reset Hour: {self.rate_limit.reset_hour}:00")
 
-        print(f"\nLogging:")
+        print("\nLogging:")
         print(f"  Level: {self.logging.level}")
         print(f"  File: {self.logging.file}")
         print(f"  Max Size: {self.logging.max_size_mb}MB")
         print(f"  Console Output: {self.logging.console_output}")
 
-        print(f"\nDirectories:")
+        print("\nDirectories:")
         print(f"  Data: {self.data_directory}")
         print(f"  Logs: {self.logs_directory}")
         print("=" * 30)
