@@ -25,8 +25,6 @@ This scraper is designed to run as a scheduled cron job, respecting API rate lim
 
 1. **Clone and setup the project:**
    ```bash
-   # Run the provided setup script to create directory structure
-   # (See setup commands in project documentation)
    ```
 
 2. **Install dependencies:**
