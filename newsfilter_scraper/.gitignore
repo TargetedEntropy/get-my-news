@@ -1,4 +1,3 @@
-# Git ignore file
 # Environment variables
 .env
 
@@ -28,6 +27,13 @@ wheels/
 logs/*.log
 *.log
 
+# Data files
+data/rate_limit.json
+data/scraper_stats.json
+
+# Lock files
+*.lock
+
 # IDE
 .vscode/
 .idea/
@@ -38,5 +44,7 @@ logs/*.log
 .DS_Store
 Thumbs.db
 
-# Ruff
-.ruff_cache
+# Testing
+.pytest_cache/
+.coverage
+htmlcov/
